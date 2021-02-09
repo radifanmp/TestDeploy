@@ -1,2 +1,2 @@
-release: sequelize db:migrate:all && sequelize db:seed:all
+release: sequelize db:migrate && sequelize db:seed:all
 web : node index.js
