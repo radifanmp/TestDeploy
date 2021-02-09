@@ -35,7 +35,7 @@ app.group("/api/v1", (router) => {
 
   //Todo API
   //Get All data
-  router.get("/todos", authenticated, todosController.index);
+  router.get("/todos", todosController.index);
   //Find One data
   router.get("/todo/:id", todosController.show);
   //Insert Data
